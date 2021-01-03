@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="jBlogs">
+<meta property="og:url" content="http://example.com/page/3/index.html">
+<meta property="og:site_name" content="jBlogs">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="jibo">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/page/3/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>jBlogs</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">jBlogs</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">16</span></a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">28</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="jibo"
+      src="https://s3.ax1x.com/2021/01/03/spUZ1P.png">
+  <p class="site-author-name" itemprop="name">jibo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jiboooooo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jiboooooo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/jiboooooo" title="https:&#x2F;&#x2F;github.com&#x2F;jiboooooo" rel="noopener" target="_blank">jBlogs in github</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/node/npm%E5%92%8Cnpx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s3.ax1x.com/2021/01/03/spUZ1P.png">
+      <meta itemprop="name" content="jibo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jBlogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/post/node/npm%E5%92%8Cnpx/" class="post-title-link" itemprop="url">npm和npx</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-02 08:38:03" itemprop="dateCreated datePublished" datetime="2021-01-02T08:38:03+08:00">2021-01-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-08 05:22:59" itemprop="dateModified" datetime="2020-12-08T05:22:59+08:00">2020-12-08</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/node/" itemprop="url" rel="index"><span itemprop="name">node</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>npm,node package management,node包管理工具<br>npx,node package execution,node包运行工具<br>当运行npx command时，npx先检查path里有没有，再检查当前目录的node_modules里有没有，如果没有，在临时目录里安装这个command后执行。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/MaterialUI/MaterialUI%20Typography%20api/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s3.ax1x.com/2021/01/03/spUZ1P.png">
+      <meta itemprop="name" content="jibo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jBlogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/post/MaterialUI/MaterialUI%20Typography%20api/" class="post-title-link" itemprop="url">MaterialUI Typography API</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-02 08:38:03" itemprop="dateCreated datePublished" datetime="2021-01-02T08:38:03+08:00">2021-01-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-08 05:22:59" itemprop="dateModified" datetime="2020-12-08T05:22:59+08:00">2020-12-08</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/MaterialUI/" itemprop="url" rel="index"><span itemprop="name">MaterialUI</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="Typography-API"><a href="#Typography-API" class="headerlink" title="Typography API"></a>Typography API</h4><p>The API documentation of the Typography React component. Learn more about the props and the CSS customization points.</p>
+<h6 id="Import"><a href="#Import" class="headerlink" title="Import"></a>Import</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Typography <span class="keyword">from</span> <span class="string">&#x27;@material-ui/core/Typography&#x27;</span>;</span><br><span class="line"><span class="comment">// or</span></span><br><span class="line"><span class="keyword">import</span> &#123; Typography &#125; <span class="keyword">from</span> <span class="string">&#x27;@material-ui/core&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="Component-name"><a href="#Component-name" class="headerlink" title="Component name"></a>Component name</h5><p>The <code>MuiTypography</code> name can be used for providing default props or style overrides at the theme level.</p>
+<h5 id="Props"><a href="#Props" class="headerlink" title="Props"></a>Props</h5><table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>default</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>align</td>
+<td>inherit<br/>left<br/>center<br/>right<br/>justify</td>
+<td>inherit</td>
+<td>Set the text-align on the component.</td>
+</tr>
+<tr>
+<td>children</td>
+<td>node</td>
+<td></td>
+<td>The content of the component</td>
+</tr>
+<tr>
+<td>classes</td>
+<td>object</td>
+<td></td>
+<td>Override or extend the styles applied to the component. See <a target="_blank" rel="noopener" href="https://material-ui.com/zh/api/typography/#css">CSS API</a> below for more details.</td>
+</tr>
+<tr>
+<td>color</td>
+<td>initial<br/>inherit<br/>primary<br/>secondary<br/>textPrimary<br/>textSecondary<br/></td>
+<td>initial</td>
+<td>The color of the component. It supports those theme colors that make sense for this component.</td>
+</tr>
+<tr>
+<td>component</td>
+<td>elementTypo</td>
+<td></td>
+<td>The component used for the root node. Either a string to use a HTML element or a component. Overrides the behavior of the <code>variantMapping</code> prop.</td>
+</tr>
+<tr>
+<td>display</td>
+<td>initial<br/>block<br/>inline</td>
+<td>initial</td>
+<td>Controls the display type</td>
+</tr>
+<tr>
+<td>gutterBottom</td>
+<td>bool</td>
+<td>false</td>
+<td>If <code>true</code>, the text will have a bottom margin.</td>
+</tr>
+<tr>
+<td>noWrap</td>
+<td>bool</td>
+<td>false</td>
+<td>If <code>true</code>, the text will not wrap, but instead will truncate with a text overflow ellipsis.<br/>Note that text overflow can only happen with block or inline-block level elements (the element needs to have a width in order to overflow).</td>
+</tr>
+<tr>
+<td>paragraph</td>
+<td>bool</td>
+<td>false</td>
+<td>If <code>true</code>, the text will have a bottom margin.</td>
+</tr>
+<tr>
+<td>variant</td>
+<td>h1<br/>h2<br/>h3<br/>h4<br/>h5<br/>h6<br/>subtitle1<br/>sbutitle2<br/>body1<br/>body2<br/>caption<br/>button<br/>overline<br/>srOnly<br>inherit</td>
+<td>body1</td>
+<td>Applies the theme typography styles.</td>
+</tr>
+<tr>
+<td>variantMapping</td>
+<td>object</td>
+<td>{ h1: ‘h1’, h2: ‘h2’, h3: ‘h3’, h4: ‘h4’, h5: ‘h5’, h6: ‘h6’, subtitle1: ‘h6’, subtitle2: ‘h6’, body1: ‘p’, body2: ‘p’,}</td>
+<td>The component maps the variant prop to a range of different HTML element types. For instance, subtitle1 to <code>&lt;h6&gt;</code>. If you wish to change that mapping, you can provide your own. Alternatively, you can use the <code>component</code> prop.</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/MaterialUI/MaterialUI%20Styles/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s3.ax1x.com/2021/01/03/spUZ1P.png">
+      <meta itemprop="name" content="jibo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jBlogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/post/MaterialUI/MaterialUI%20Styles/" class="post-title-link" itemprop="url">MaterialUI Styles</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-02 08:38:03" itemprop="dateCreated datePublished" datetime="2021-01-02T08:38:03+08:00">2021-01-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-08 05:22:59" itemprop="dateModified" datetime="2020-12-08T05:22:59+08:00">2020-12-08</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/MaterialUI/" itemprop="url" rel="index"><span itemprop="name">MaterialUI</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="Why-use-Material-UI’s-styling-solution"><a href="#Why-use-Material-UI’s-styling-solution" class="headerlink" title="Why use Material-UI’s styling solution?"></a>Why use Material-UI’s styling solution?</h4><p>In previous versions, Material-UI has used LESS, then a custom inline-style solution to write the component styles, but these approaches have proven to be limited. <a target="_blank" rel="noopener" href="https://github.com/oliviertassinari/a-journey-toward-better-style">A <em>CSS-in-JS</em> solution</a> overcomes many of those limitations, and <strong>unlocks many great features</strong> (theme nesting, dynamic styles, self-support, etc.).</p>
+<p>MaterialUI’s styling solution is inspired by many other styling libraries such as <a target="_blank" rel="noopener" href="https://www.styled-components.com/">styled-components</a> and <a target="_blank" rel="noopener" href="https://emotion.sh/">emotion</a>.</p>
+<ul>
+<li>💅 You can expect <a target="_blank" rel="noopener" href="https://www.styled-components.com/docs/basics#motivation">the same advantages</a> as styled-components.</li>
+<li>🚀 It’s <a target="_blank" rel="noopener" href="https://github.com/mui-org/material-ui/blob/master/packages/material-ui-benchmark/README.md#material-uistyles">blazing fast</a>.</li>
+<li>🧩 It’s extensible via a <a target="_blank" rel="noopener" href="https://github.com/cssinjs/jss/blob/master/docs/plugins.md">plugin</a> API.</li>
+<li>⚡️ It uses <a target="_blank" rel="noopener" href="https://github.com/cssinjs/jss">JSS</a> at its core – a <a target="_blank" rel="noopener" href="https://github.com/cssinjs/jss/blob/master/docs/performance.md">high performance</a> JavaScript to CSS compiler which works at runtime and server-side.</li>
+<li>📦 Less than <a target="_blank" rel="noopener" href="https://bundlephobia.com/result?p=@material-ui/styles">15 KB gzipped</a>; and no bundle size increase if used alongside Material-UI.</li>
+</ul>
+<h4 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h4><p>@material-ui/styles is re-exported as @material-ui/core/styles - you only need to install it if you wish to use it independently from Material-UI.<br>To install and save in your package.json dependencies, run:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// with npm</span><br><span class="line">npm install @material-ui/styles</span><br><span class="line">or</span><br><span class="line">// with yarn</span><br><span class="line">yarn add @material-ui/styles</span><br></pre></td></tr></table></figure>
+<h4 id="Getting-started"><a href="#Getting-started" class="headerlink" title="Getting started"></a>Getting started</h4><p>Hook API</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">&#x27;react&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; makeStyles &#125; <span class="keyword">from</span> <span class="string">&#x27;@material-ui/core/styles&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> Button <span class="keyword">from</span> <span class="string">&#x27;@material-ui/core/Button&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> useStyles = makeStyles(&#123;</span><br><span class="line">  style: &#123;</span><br><span class="line">    background: <span class="string">&#x27;linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)&#x27;</span>,</span><br><span class="line">    border: <span class="number">0</span>,</span><br><span class="line">    borderRadius: <span class="number">3</span>,</span><br><span class="line">    boxShadow: <span class="string">&#x27;0 3px 5px 2px rgba(255, 105, 135, .3)&#x27;</span>,</span><br><span class="line">    color: <span class="string">&#x27;white&#x27;</span>,</span><br><span class="line">    height: <span class="number">48</span>,</span><br><span class="line">    padding: <span class="string">&#x27;0 30px&#x27;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span> <span class="title">Hook</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> classes = useStyles();</span><br><span class="line">  <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">className</span>=<span class="string">&#123;classes.style&#125;</span>&gt;</span>Styled with Hook API<span class="tag">&lt;/<span class="name">Button</span>&gt;</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/MaterialUI/MaterialUI%20Button%20api/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s3.ax1x.com/2021/01/03/spUZ1P.png">
+      <meta itemprop="name" content="jibo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jBlogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/post/MaterialUI/MaterialUI%20Button%20api/" class="post-title-link" itemprop="url">MaterialUI Button API</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-02 08:38:03" itemprop="dateCreated datePublished" datetime="2021-01-02T08:38:03+08:00">2021-01-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-08 05:22:59" itemprop="dateModified" datetime="2020-12-08T05:22:59+08:00">2020-12-08</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/MaterialUI/" itemprop="url" rel="index"><span itemprop="name">MaterialUI</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h4 id="Button-API"><a href="#Button-API" class="headerlink" title="Button API"></a>Button API</h4><p>The API documentation of the Button React component. Learn more about the props and the CSS customization points.</p>
+<h5 id="Import"><a href="#Import" class="headerlink" title="Import"></a>Import</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Button <span class="keyword">from</span> <span class="string">&#x27;@material-ui/core/Button&#x27;</span>;</span><br><span class="line"><span class="comment">// or</span></span><br><span class="line"><span class="keyword">import</span> &#123; Button &#125; <span class="keyword">from</span> <span class="string">&#x27;@material-ui/core&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h5 id="Component-name"><a href="#Component-name" class="headerlink" title="Component name"></a>Component name</h5><p>The <code>MuiButton</code> name can be used for providing default props or style overrides at the theme level.</p>
+<h5 id="Props"><a href="#Props" class="headerlink" title="Props"></a>Props</h5><table>
+<thead>
+<tr>
+<th>name</th>
+<th>type</th>
+<th>default</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>children</td>
+<td>node</td>
+<td></td>
+<td>The content of the button</td>
+</tr>
+<tr>
+<td>classes</td>
+<td>object</td>
+<td></td>
+<td>Override or extend the styles applied to the component. See <a target="_blank" rel="noopener" href="https://material-ui.com/api/button/#css">CSS API</a> below for more details.</td>
+</tr>
+<tr>
+<td>color</td>
+<td>default<br/>inherit<br/>primary<br/>secondary</td>
+<td>default</td>
+<td>The color of the component. It supports those theme colors that make sense for this component.</td>
+</tr>
+<tr>
+<td>conponent</td>
+<td>elementType</td>
+<td>button</td>
+<td>The component used for the root node. Either a string to use a HTML element or a component.</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>bool</td>
+<td>false</td>
+<td>If <code>true</code>, the button will be disabled.</td>
+</tr>
+<tr>
+<td>disableElevation</td>
+<td>bool</td>
+<td>false</td>
+<td>If <code>true</code>, no elevation is used.</td>
+</tr>
+<tr>
+<td>disableFocusRipple</td>
+<td>bool</td>
+<td>false</td>
+<td>If <code>true</code>, the keyboard focus ripple will be disabled.</td>
+</tr>
+<tr>
+<td>disableRipple</td>
+<td>bool</td>
+<td></td>
+<td>If <code>true</code>, the ripple effect will be disabled.<br/>⚠️ Without a ripple there is no styling for :focus-visible by default. Be sure to highlight the element by applying separate styles with the <code>focusVisibleClassName</code>.</td>
+</tr>
+<tr>
+<td>endIcon</td>
+<td>node</td>
+<td></td>
+<td>Element placed after the children.</td>
+</tr>
+<tr>
+<td>fullWidth</td>
+<td>bool</td>
+<td>false</td>
+<td>If <code>true</code>, the button will take up the full width of its container.</td>
+</tr>
+<tr>
+<td>href</td>
+<td>string</td>
+<td></td>
+<td>The URL to link to when the button is clicked. If defined, an <code>a</code> element will be used as the root node.</td>
+</tr>
+<tr>
+<td>size</td>
+<td>large<br/>medium<br/>small</td>
+<td>medium</td>
+<td>The size of the button. <code>small</code> is equivalent to the dense button styling.</td>
+</tr>
+<tr>
+<td>startIcon</td>
+<td>node</td>
+<td></td>
+<td>Element placed before the children.</td>
+</tr>
+<tr>
+<td>variant</td>
+<td>contained<br/>outlined<br/>text</td>
+<td>text</td>
+<td>The variant to use.</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/hexo/hexo%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s3.ax1x.com/2021/01/03/spUZ1P.png">
+      <meta itemprop="name" content="jibo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jBlogs">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/post/hexo/hexo%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">hexo命令</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-02 08:38:03" itemprop="dateCreated datePublished" datetime="2021-01-02T08:38:03+08:00">2021-01-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-01-03 09:44:36" itemprop="dateModified" datetime="2021-01-03T09:44:36+08:00">2021-01-03</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h4 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli</span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add hexo-cli</span><br></pre></td></tr></table></figure>
+<h4 id="创建工程"><a href="#创建工程" class="headerlink" title="创建工程"></a>创建工程</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [folderName]</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx hexo init [folderName]</span><br></pre></td></tr></table></figure>
+<p>This command is a shortcut that runs the following steps:<br>1、Git clone hexo-starter including hexo-theme-landscape into the current directory or a target folder if specified.<br>2、Install dependencies using a package manager: Yarn 1, pnpm or npm, whichever is installed; if there are more than one installed, the priority is as listed. npm is bundled with Node.js by default.</p>
+<h4 id="运行服务"><a href="#运行服务" class="headerlink" title="运行服务"></a>运行服务</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server <span class="comment">#server可简写为s</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h4 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt; <span class="comment">#new可简写为n</span></span><br></pre></td></tr></table></figure>
+<p>新建一篇文章。如果没有设置layout的话，默认使用_config.yml中的default_layout参数代替。如果标题包含空格的话，请使用引号括起来。<br>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h4 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate <span class="comment">#generate可简写g</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h4 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy <span class="comment">#deploy可简写为d,这个命令需要安装插件，如`hexo-deployer-git`</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>第二种方法：将生成的静态文件推送到github或者gitee</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git push https://github.com/yourname/yourname.github.io.git master</span><br><span class="line"><span class="meta">#</span><span class="bash">需要安装git</span></span><br><span class="line">git push https://gitee.com/yourname/yourname.git master</span><br><span class="line"><span class="meta">#</span><span class="bash">需要安装git</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jibo</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

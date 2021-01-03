@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667patch:  schema_list:    - schema: wubi_pinyin    - schema: pinyin_simp    -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="rime 中州韵 小狼毫 配置">
+<meta property="og:url" content="http://example.com/post/rime/rime%E4%B8%AD%E5%B7%9E%E9%9F%B5%E5%B0%8F%E7%8B%BC%E6%AF%AB%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:site_name" content="jBlogs">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667patch:  schema_list:    - schema: wubi_pinyin    - schema: pinyin_simp    -">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-01-02T00:38:03.964Z">
+<meta property="article:modified_time" content="2020-12-07T21:22:59.000Z">
+<meta property="article:author" content="jibo">
+<meta property="article:tag" content="rime">
+<meta property="article:tag" content="中州韵">
+<meta property="article:tag" content="小狼毫">
+<meta property="article:tag" content="default.custom.yaml">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/post/rime/rime%E4%B8%AD%E5%B7%9E%E9%9F%B5%E5%B0%8F%E7%8B%BC%E6%AF%AB%E9%85%8D%E7%BD%AE/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>rime 中州韵 小狼毫 配置 | jBlogs</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">jBlogs</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">16</span></a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">28</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="jibo"
+      src="https://s3.ax1x.com/2021/01/03/spUZ1P.png">
+  <p class="site-author-name" itemprop="name">jibo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jiboooooo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jiboooooo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/jiboooooo" title="https:&#x2F;&#x2F;github.com&#x2F;jiboooooo" rel="noopener" target="_blank">jBlogs in github</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/rime/rime%E4%B8%AD%E5%B7%9E%E9%9F%B5%E5%B0%8F%E7%8B%BC%E6%AF%AB%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://s3.ax1x.com/2021/01/03/spUZ1P.png">
+      <meta itemprop="name" content="jibo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jBlogs">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          rime 中州韵 小狼毫 配置
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-02 08:38:03" itemprop="dateCreated datePublished" datetime="2021-01-02T08:38:03+08:00">2021-01-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-12-08 05:22:59" itemprop="dateModified" datetime="2020-12-08T05:22:59+08:00">2020-12-08</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/rime/" itemprop="url" rel="index"><span itemprop="name">rime</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">patch:</span></span><br><span class="line">  <span class="attr">schema_list:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">schema:</span> <span class="string">wubi_pinyin</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">schema:</span> <span class="string">pinyin_simp</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">schema:</span> <span class="string">wubi86</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">switcher:</span></span><br><span class="line">    <span class="attr">caption:</span> <span class="string">〔方案选单〕</span></span><br><span class="line">    <span class="attr">hotkeys:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">F4</span></span><br><span class="line">    <span class="attr">save_options:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">full_shape</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">ascii_punct</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">simplification</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">extended_charset</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">zh_hant</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">zh_hans</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">zh_hant_tw</span></span><br><span class="line">    <span class="attr">fold_options:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">abbreviate_options:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">option_list_separator:</span> <span class="string">&#x27;／&#x27;</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">menu:</span></span><br><span class="line">    <span class="attr">page_size:</span> <span class="number">3</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">key_binder:</span></span><br><span class="line">    <span class="attr">bindings:</span></span><br><span class="line">      <span class="comment"># Emacs style</span></span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+p</span>, <span class="attr">send:</span> <span class="string">Up</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+n</span>, <span class="attr">send:</span> <span class="string">Down</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+b</span>, <span class="attr">send:</span> <span class="string">Left</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+f</span>, <span class="attr">send:</span> <span class="string">Right</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+a</span>, <span class="attr">send:</span> <span class="string">Home</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+e</span>, <span class="attr">send:</span> <span class="string">End</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+d</span>, <span class="attr">send:</span> <span class="string">Delete</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+k</span>, <span class="attr">send:</span> <span class="string">Shift+Delete</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+h</span>, <span class="attr">send:</span> <span class="string">BackSpace</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+g</span>, <span class="attr">send:</span> <span class="string">Escape</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+bracketleft</span>, <span class="attr">send:</span> <span class="string">Escape</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Alt+v</span>, <span class="attr">send:</span> <span class="string">Page_Up</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Control+v</span>, <span class="attr">send:</span> <span class="string">Page_Down</span> &#125;</span><br><span class="line">      <span class="comment"># move by word</span></span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">ISO_Left_Tab</span>, <span class="attr">send:</span> <span class="string">Shift+Left</span> &#125;</span><br><span class="line">      <span class="comment"># tab,翻页</span></span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Shift+Tab</span>, <span class="attr">send:</span> <span class="string">Page_up</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">composing</span>, <span class="attr">accept:</span> <span class="string">Tab</span>, <span class="attr">send:</span> <span class="string">Page_Down</span> &#125;</span><br><span class="line">      <span class="comment"># flip page</span></span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">has_menu</span>, <span class="attr">accept:</span> <span class="string">minus</span>, <span class="attr">send:</span> <span class="string">Page_Up</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">has_menu</span>, <span class="attr">accept:</span> <span class="string">equal</span>, <span class="attr">send:</span> <span class="string">Page_Down</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">paging</span>, <span class="attr">accept:</span> <span class="string">comma</span>, <span class="attr">send:</span> <span class="string">Page_Up</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">has_menu</span>, <span class="attr">accept:</span> <span class="string">period</span>, <span class="attr">send:</span> <span class="string">Page_Down</span> &#125;</span><br><span class="line">      <span class="comment"># hotkey switch</span></span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+1</span>, <span class="attr">select:</span> <span class="string">.next</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+2</span>, <span class="attr">toggle:</span> <span class="string">ascii_mode</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+3</span>, <span class="attr">toggle:</span> <span class="string">full_shape</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+4</span>, <span class="attr">toggle:</span> <span class="string">simplification</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+5</span>, <span class="attr">toggle:</span> <span class="string">extended_charset</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+exclam</span>, <span class="attr">select:</span> <span class="string">.next</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+at</span>, <span class="attr">toggle:</span> <span class="string">ascii_mode</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+numbersign</span>, <span class="attr">toggle:</span> <span class="string">full_shape</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+dollar</span>, <span class="attr">toggle:</span> <span class="string">simplification</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+Shift+percent</span>, <span class="attr">toggle:</span> <span class="string">extended_charset</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Shift+space</span>, <span class="attr">toggle:</span> <span class="string">full_shape</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">always</span>, <span class="attr">accept:</span> <span class="string">Control+period</span>, <span class="attr">toggle:</span> <span class="string">ascii_punct</span> &#125;</span><br><span class="line">        <span class="comment">#分号、引号，发送第二、三候选词</span></span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">has_menu</span>, <span class="attr">accept:</span> <span class="string">semicolon</span>, <span class="attr">send:</span> <span class="number">2</span> &#125;</span><br><span class="line">      <span class="bullet">-</span> &#123; <span class="attr">when:</span> <span class="string">has_menu</span>, <span class="attr">accept:</span> <span class="string">apostrophe</span>, <span class="attr">send:</span> <span class="number">3</span> &#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/rime/" rel="tag"># rime</a>
+              <a href="/tags/%E4%B8%AD%E5%B7%9E%E9%9F%B5/" rel="tag"># 中州韵</a>
+              <a href="/tags/%E5%B0%8F%E7%8B%BC%E6%AF%AB/" rel="tag"># 小狼毫</a>
+              <a href="/tags/default-custom-yaml/" rel="tag"># default.custom.yaml</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/rime/rime%E4%B8%AD%E5%B7%9E%E9%9F%B5%E5%B0%8F%E7%8B%BC%E6%AF%AB%E8%BE%93%E5%85%A5%E6%96%B9%E6%A1%88%E9%85%8D%E7%BD%AE/" rel="prev" title="rime中州韵小狼毫输入方案配置">
+                  <i class="fa fa-chevron-left"></i> rime中州韵小狼毫输入方案配置
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/visualStudioCode/visualStudioCode%E9%85%8D%E7%BD%AE/" rel="next" title="visualStudioCode配置">
+                  visualStudioCode配置 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jibo</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
